@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+.app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    max-width: 1380px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 20px 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?cs=srgb&dl=pexels-pixabay-235985.jpg&fm=jpg);
+    background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+th,
+td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 8px;
+    font-size: 32px;
 }
 
-.App-link {
-  color: #61dafb;
+th {
+    background-color: rgba(117, 201, 250, 0.668);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+td {
+    background-color: rgba(205, 235, 253, 0.674);
+}
+
+.adcon {
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 32px;
+}
+
+input {
+    width: 100%;
+    background-color:rgba(0, 255, 255, 0.656);
+    border: 1px solid rgb(0, 157, 255);
+    color: white;
+    border-radius: 4px;
+}
+
+.editt {
+    background-color: rgba(0, 128, 0, 0.772);
+    border-radius: 4px;
+}
+
+.deletee {
+    background-color: red;
+    border-radius: 4px;
+}
+
+.addd {
+    background-color: rgba(0, 136, 255, 0.892);
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    /* background-color: rgba(0, 128, 0, 0.314); */
+    padding: 5px 7px;
+}
+
+form {
+    display: flex;
+    gap: 5px;
+}
+
+form td:last-child {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form * {
+    font-size: 28px;
+}
+
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+@media (max-width: 1320px) {
+    .flax {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .container {
+        flex-direction: column;
+    }
 }
